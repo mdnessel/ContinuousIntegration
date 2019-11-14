@@ -10,6 +10,12 @@ class CalculatorTest {
     }
 
     @Test
+    void failTest(){
+        Calculator calc = new Calculator();
+        Assertions.assertEquals(58, calc.add(1,5));
+    }
+
+    @Test
     void testMultiply(){
         Calculator calc = new Calculator();
         Assertions.assertEquals(9, calc.multiply(3,3));
